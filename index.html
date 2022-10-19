@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="main.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Press+Start+2P&family=Space+Mono&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,200&display=swap" rel="stylesheet">
+</head>
+<body class="bg-body">
+    <svg id="star" class="h-4 hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" /></svg>
+    <header class="flex justify-between text-white py-4 px-8">
+        <a href="#" class="text-lg font-bold">GitThon</a>
+
+        <ul class="hidden md:flex flex-row items-center align-middle gap-4">
+            <li><a href="#" class="nav-btn bg-borders py-2 px-4 text-white rounded-md">Home</a></li>
+            <li><a href="https://t.me/Avira" class="nav-btn">Channel</a></li>
+            <li><a href="https://t.me/I01270" target="_blank" class="nav-btn">Contact</a></li>
+        </ul>
+
+        <div id="phone-drop" class="absolute right-8 top-12 max-w-lg mx-auto hidden">
+            <div class="bg-white rounded-lg border border-gray-200 w-48 text-gray-900 text-sm font-medium">
+                <a href="#" aria-current="true" class="text-body block px-4 py-2 border-b border-gray-200 w-full rounded-t-lg bg-blue-700 text-white cursor-pointer">
+                    Channel</a>
+                <a href="#" class="block text-body px-4 py-2 border-b border-gray-200 w-full hover:bg-gray-100 hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:text-blue-700 cursor-pointer">
+                    Contact</a>
+            </div>
+        </div>
+
+        <button class="md:hidden" id="phone-click">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
+              </svg>
+        </button>
+    </header>
+
+  <div class="container mx-auto mt-16">
+        <div class="mb-4 px-3 flex">
+            <input id="user" value="" class="rounded-l-lg p-3 border-t mr-0 border-b border-l border-white bg-white" placeholder="Username"/>
+            <button id="search" class="px-8 rounded-r-lg bg-borders  text-white font-bold p-4 uppercase border-white border-t border-b border-r">Search</button>
+        </div>
+        <div id="error" class="hidden px-3 mb-1 text-center text-6xl text-white mt-[100px]">Not Found</div>
+<!-- <div class="flex flex-row flex-wrap px-3 mb-1">
+        <div class="flex bg-white rounded-lg px-4 py-4 w-[100%] flex-row-reverse justify-end items-center shadow-lg shadow-borders-900 sm:justify-between">
+            <img class="hidden sm:block rounded-full w-20" src="https://avatars.githubusercontent.com/u/116031781?v=4">
+            <div class="flex flex-col items-start">
+                <h1 class="link text-lg text-borders mb-3 max-w-md"><a href="#">FemellesV7 / Valorant-Account-Checker</a></h1>
+                <h2 class="tracking-widest mb-1 text-xs max-w-md text-superLightBlue">Built by · FemellesV7 · October 17 2022</h2>
+                <p class="leading-relaxed text-sm max-w-md mb-2">TIKTOK VIEW , SHARE , LIKE BOT NOT PATCHED 2022.</p>
+                <div class="flex items-center">
+                    <p class="mr-2">Python</p>
+                    <svg class="h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" /></svg>
+                    <p class="px-[3px]">57</p>
+                </div>
+            </div>
+        </div>
+    </div> -->
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
